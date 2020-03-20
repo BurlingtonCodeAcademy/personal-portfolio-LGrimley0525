@@ -6,7 +6,11 @@ import App from './App';
 import About from './About';
 import Portfolio from './Portfolio';
 import Header from './Header'
+import Interests from './Interests'
+import WorkHistory from './WorkHistory';
+import Contact from './Contact'
 import * as serviceWorker from './serviceWorker';
+
 
 function Router(props) {
     return (
@@ -19,6 +23,9 @@ function Router(props) {
                     <Route exact path={'/'} component={App} />
                     <Route path={'/about'} component={About} />
                     <Route path={'/portfolio'} component={Portfolio} />
+                    <Route path={'/interests'} component={Interests} />
+                    <Route path={'/workhistory'} component={WorkHistory} />
+                    <Route path={'/contact'} component={Contact} />
                 </Switch>
 
             </BrowserRouter>

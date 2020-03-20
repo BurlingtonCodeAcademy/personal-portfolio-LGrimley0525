@@ -14,6 +14,15 @@ function Header(props){
             <Link to={'/portfolio'}>
                 <button>Portfolio</button>
             </Link>
+            <Link to={'/interests'}>
+                <button>Interests</button>
+            </Link>
+            <Link to={'/workhistory'}>
+                <button>Work History</button>
+            </Link>
+            <Link to={'/contact'}>
+                <button>Contact Me</button>
+            </Link>
         </div>
     )
 }
