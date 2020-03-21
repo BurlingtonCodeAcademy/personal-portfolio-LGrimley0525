@@ -3,15 +3,16 @@ import './App.css';
 
 
 function App() {
-      return(
+  return (
+    <div className="App">
+      <h1> Hi, <br />
+      I'm Lauren, <br />
+      full stack web developer.</h1>
+      <div className="home-overlay"></div>
+    
+    </div>
+  )
+}
 
-      <div className="App">
-        <h1> Hello from the Home Page!</h1>
-       
-      </div>
-    )
-    }
-  
-  
 
 export default App;

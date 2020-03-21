@@ -1,28 +1,35 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Logo from './Logo.png'
+import './App.css'
 
 function Header(props){
     return(
         <div>
+            <div id='logo-photo'>
+             <img src={Logo} alt="Logo"></img>
+             </div>
+            <div id='header-buttons'> 
+            
             <Link to={'/'}>
-                <button>Home</button>
+                <button id='button'>Home</button>
             </Link>
             <Link to={'/about'}>
-                <button>About Button</button>
+                <button id='button'>About Me</button>
             </Link>
             <Link to={'/portfolio'}>
-                <button>Portfolio</button>
+                <button id='button'>Portfolio</button>
             </Link>
             <Link to={'/interests'}>
-                <button>Interests</button>
+                <button id='button'>Interests</button>
             </Link>
             <Link to={'/workhistory'}>
-                <button>Work History</button>
+                <button id='button'>Work History</button>
             </Link>
             <Link to={'/contact'}>
-                <button>Contact Me</button>
+                <button id='button'>Contact Me</button>
             </Link>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,109 @@
+
+.about{
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 15% 42.5% 42.5%;
+    grid-template-areas: 
+    ". about-title about-title ."
+    ". about-text about-photo ."
+    ". about-text about-photo ."                     
+}
+
+#about-title{
+    grid-area: about-title;
+}
+#about-text{
+    grid-area: about-text;
+}
+
+#about-photo{
+    grid-area: about-photo;
+}
+
+
+.App{
+    height: 100%
+}
+.home-overlay{
+    background-image: url(HomeOverlay.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.App h1{
+    z-index: 1000;
+    text-align: end;
+}
+
+/* Header CSS---------------------------------------------------- */
+#button {
+    
+    background-color: rgb(95, 97, 95); 
+    border: none;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 12pt;
+    color: white;
+    padding: 10px 25px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  #button:hover {
+    background-color: black;
+    opacity: 50%;
+    transition: all .5s ease-out;
+    color: aqua;
+  }
+
+  #header-buttons{
+      display: flex;
+      justify-content: flex-end;
+  }
+  #logo-photo{
+      float: left;
+      margin-top: 20px;
+      padding-left: 15px;
+      
+  }
+
+  /* Portfolio CSS---------------------------------------------- */
+
+  .portfolio{
+      display:grid;
+      grid-gap: 2em;
+      grid-template-columns: 7.5% 30% 25% 30% 7.5%;
+    grid-template-rows: 17.5% 27.5% 27.5% 27.5% ;
+    grid-template-areas: 
+    ". title title title ."
+    ". geovermont . yelp ."
+    ". remock . tictactoe ."
+    ". . zork . ."                     
+}
+
+#title{
+    grid-area: title;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+#geovermont{
+    grid-area: geovermont
+}
+#yelp{
+    grid-area: yelp
+}
+#remock{
+    grid-area: remock
+}
+#tictactoe{
+    grid-area: tictactoe;
+}
+#zork{
+    grid-area: zork;
+}

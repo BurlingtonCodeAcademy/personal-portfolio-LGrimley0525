@@ -9,6 +9,7 @@ import Header from './Header'
 import Interests from './Interests'
 import WorkHistory from './WorkHistory';
 import Contact from './Contact'
+import Footer from './Footer'
 import * as serviceWorker from './serviceWorker';
 
 
@@ -27,6 +28,8 @@ function Router(props) {
                     <Route path={'/workhistory'} component={WorkHistory} />
                     <Route path={'/contact'} component={Contact} />
                 </Switch>
+
+                <Footer />
 
             </BrowserRouter>
         
