@@ -1,9 +1,9 @@
 import React from 'react'
-import GeoVermont from './projectthumbnail/GeoVermont.png'
-import Remock from './projectthumbnail/Remock.png'
-import TicTacToe from './projectthumbnail/TicTacToe.png'
-import Yelpington from './projectthumbnail/Yelpington.png'
-import Zorkington from './projectthumbnail/Zorkington.png'
+import GeoVermont from './projectthumbnail/GeoVermonter2.png'
+import Remock from './projectthumbnail/Remock 2.png'
+import TicTacToe from './projectthumbnail/tictactoe 3.png'
+import Yelpington from './projectthumbnail/yelpington 2.png'
+import Zorkington from './projectthumbnail/zorkington 2.png'
 import './App.css'
 
 function Portfolio(props) {
@@ -16,17 +16,17 @@ function Portfolio(props) {
             <div id='geovermont'>
                 <h3> Geo-Vermonter </h3>
                 <img src={GeoVermont} alt="GeoVermont"></img>
-                <h4> A Vermont geographic county guessing game using the Leaflet.js library. <br /> Click <a href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-leepeters0023'>here</a> for the code. </h4>
+                <h4> A Vermont geographic county guessing game using React and Leaflet.js library. <br /> Click <a href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-leepeters0023'>here</a> for the code. </h4>
             </div>
             <div id='yelp'>
                 <h3> Yelpington </h3>
                 <img src={Yelpington} alt="Yelpington"></img>
-                <h4>A directory of Burlington restaurants that uses AJAX to retrieve JSON data. <br />  Click <a href='https://github.com/BurlingtonCodeAcademy/yelpington-LGrimley0525'>here</a> for the code.</h4>
+                <h4>A directory of Burlington restaurants that uses AJAX to retrieve JSON data and Leaflet. <br />  Click <a href='https://github.com/BurlingtonCodeAcademy/yelpington-LGrimley0525'>here</a> for the code.</h4>
             </div>
             <div id='remock'>
                 <h3> Website Remock </h3>
                 <img src={Remock} alt="Remock"></img>
-                <h4> Re-creation of a complicated blog-style webpage using CSS. <br /> Click <a href='https://github.com/BurlingtonCodeAcademy/remock-bapzen'>here</a> for the code. </h4>
+                <h4> Re-creation of a complicated blog-style webpage using CSS and HTML. <br /> Click <a href='https://github.com/BurlingtonCodeAcademy/remock-bapzen'>here</a> for the code. </h4>
             </div>
             <div id='tictactoe'>
                 <h3> Tic-Tac-Toe </h3>
