@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './index.css';
+import './App.css'
 import App from './App';
 import About from './About';
 import Portfolio from './Portfolio';

@@ -11,23 +11,47 @@
     ". about-title about-title ."
     ". about-text about-photo ."
     ". about-text about-photo ."    ;
-    grid-gap: 2rem;                 
+    grid-gap: 2rem;    
 }
 
 #about-title{
     grid-area: about-title;
+    font-size: 28px;
 }
+
+#about-title h1{
+    color: #2978a0;
+    font-weight: 700;
+}
+
 #about-text{
     grid-area: about-text;
     margin-top: 0px;
-    margin-right: 20px;
+    margin-right: 22px;
     text-overflow: inherit;
+    margin-bottom: 200px;
 }
 
+hr{
+    color: #c6e0ff
+}
+
+#about-text h3{
+    font-size: 20px;
+    color:#bcab79
+}
+
+#about-text p{
+    font-size: 18px;
+    color: #c6e0ff
+}
 #about-photo{
     grid-area: about-photo;
     margin-top: 20px;
+    margin-bottom: 200px;
 }
+
+
 
 /* HomePage CSS----------------------------------------------- */
 
@@ -109,30 +133,30 @@
       margin-bottom: 20px;
   }
   #logo-photo{
-      float: left;
-      margin-top: 20px;
-      padding-left: 15px;
-           
+    float: left;
+    margin-top: 20px;
+    padding-left: 15px;    
   }
 
   /* Portfolio CSS---------------------------------------------- */
 
   .portfolio{
-      display: grid;
-      grid-gap: 3rem;
-      grid-template-columns: 5% 35% 15% 35% 10%;
-    grid-template-rows: 10% 30% 30% 30% ;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 5% 35% 15% 35% 10%;
+    grid-template-rows: 10% 30% 30% 30%;
     grid-template-areas: 
     ". title title title ."
     ". geovermont . yelp ."
     ". remock . tictactoe ."
-    ". . zork . ."                     
+    ". . zork . ."   
+                   
 }
 
 .portfolio h1{
-font-size: 40px;
-color: #bcab79;
-font-weight: 700;
+    font-size: 45px;
+    color: #c6e0ff;
+    font-weight: 700;
 }
 
 .portfolio h2{
@@ -148,7 +172,6 @@ font-weight: 700;
     font-size: 12px;
     color: #bcab79;
 }
-
 
 #title{
     grid-area: title;
@@ -168,21 +191,18 @@ font-weight: 700;
 }
 #remock{
     grid-area: remock;
-    text-align: center;
-    
-   
+    text-align: center;  
 }
 #tictactoe{
     grid-area: tictactoe;
     text-align: center;
-  
 }
 #zork{
     grid-area: zork;
     text-align: center;
     padding: 0;
     place-self: center;
-   
+    margin-bottom: 200px;
 }
 .portfolio img{
     text-align: center;
@@ -195,8 +215,130 @@ font-weight: 700;
 
 .portfolio #zork img{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-    
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* Footer CSS------------------------------------------------------- */
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #253031;
+    text-align: center;
+    align-content: center;
+    flex-shrink: 0;
+    margin-top: auto;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 50vh 0 50vh #253031;
+}
+
+#contact-info {
+    background-color: #253031;
+
+}
+  
+#contact-info li {
+    font-size: 18px;
+    background-color: #253031;
+}
+  
+a{
+    text-decoration: none;  
+}
+  
+
+#contact-info li {
+    list-style-type: none;
+}
+  
+.fa {
+    background-color:#253031;
+    font-size: 20px;
+    width: 25px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #c6e0ff;
+}
+  
+#contact-info{
+    display: inline-flex;
+    justify-content: center;
+}
+
+#contact-info i{
+    padding: 10px;
+    text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 150ms;
+}
+
+#contact-info i:hover {
+    margin-top: -3px;
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    opacity: 0.7;
+}
+  
+/* Contact CSS -----------------------------------------  */
+
+#modal {
+    width: 80vw;
+    height: 80vh;
+    z-index: 3000;
+    position: relative;
+    justify-self: center;
+    top: 0;
+    background-color: rgba( 0, 0,0,.3)
+  } 
+  
+  
+/* Interests CSS-------------------------------------------------- */
+  
+
+
+#burlington-pic img{
+    margin-top: 30px;
+    width: 100vw;
+    height: 100vh;
+    position: cover;
+    opacity: 0.5;
+
+}
+#interest-title{
+    color: white;
+    margin: 0;
+    padding: 30px; 
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 20px;
+    font-size: 22px;   
+    font-weight: 600;
+}
+
+#top-info{
+    text-align: center;
+    font-size: 25px;
+    color: #c6e0ff;
+}
+
+#tobey-pic img{
+    border-radius: 50%;
+}
+#bills-pic img{
+    border-radius: 50%;
+    float: right;
+}
+#burpee-pic img{}
+#wings-pic img{
+    width: 500px;
+    height: 350px;
+    border-radius: 50%;
+}
+#family-pic img{}
+
+      
+
+  

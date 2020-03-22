@@ -1,12 +1,55 @@
 import React from 'react'
+import Tobeyphoto from './hobbyphotos/Tobey.png'
+import Burlingtonphoto from './hobbyphotos/Burlington.png'
+import Billsphoto from './hobbyphotos/BillsStadium.png'
+import Burpeephoto from './hobbyphotos/Burpee.png'
+import Familyphoto from './hobbyphotos/Family.png'
+import Wingphoto from './hobbyphotos/Wings.png'
 
 
 function Interests (props){
     return(
     
     <div>
-        <h1> This is the interest and hobbies page </h1>
-       
+        <div className='interests'>
+            <div id='interest-title'><h1> When I'm not at my computer...</h1>
+            </div>
+            <div id='burlington-pic'>
+                <img src={Burlingtonphoto} alt="Burlingtonphoto"></img>
+            </div>
+            <div id='top-info'>
+                <h3> Vermonter || Dog Lover || Burpee Guru </h3>
+            </div>
+            <div id='tobey-pic'>
+                <img src={Tobeyphoto} alt="Tobeyphoto"></img>
+            </div>
+            <div id='bills-pic'>
+                <img src={Billsphoto} alt="Billsphoto"></img>
+            </div>
+            <div id='burpee-pic'>
+                <img src={Burpeephoto} alt="Burpeephoto"></img>
+            </div>
+            <div id='wings-pic'>
+                <img src={Wingphoto} alt="Wingphoto"></img>
+            </div>
+            <div id='family-pic'>
+                <img src={Familyphoto} alt="Familyphoto"></img>
+            </div>
+            <div id='about-text'>
+                <p> Buffalo Born & Raised  – which means I have 2 loves (besides my husband and pup) : 
+               <li>Chicken Wings</li> & <li>the Buffalo Bills.</li></p>
+
+                <p> I live for Sunday Football, exercising first thing in the morning, memorizing all the lyrics to my favorite songs, and spending time with my husband, Nick, and my rescue-pup, Tobey! </p>
+                <p> After moving to Vermont 7 years ago, I have discovered the beauty in a more rural setting, and the appreciation of a good pair of winter gloves!</p>
+                
+            </div>
+
+
+
+
+
+
+        </div>
     </div>
 )
 }

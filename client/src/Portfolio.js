@@ -1,9 +1,9 @@
 import React from 'react'
 import GeoVermont from './projectthumbnail/GeoVermonter2.png'
-import Remock from './projectthumbnail/Remock 2.png'
-import TicTacToe from './projectthumbnail/tictactoe 3.png'
-import Yelpington from './projectthumbnail/yelpington 2.png'
-import Zorkington from './projectthumbnail/zorkington 2.png'
+import Remock from './projectthumbnail/Remock2.png'
+import TicTacToe from './projectthumbnail/tictactoe3.png'
+import Yelpington from './projectthumbnail/yelpington2.png'
+import Zorkington from './projectthumbnail/zorkington2.png'
 import './App.css'
 
 function Portfolio(props) {

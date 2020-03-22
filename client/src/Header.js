@@ -2,12 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from './Logo2.png'
 import './App.css'
+import Contact from './Contact.js'
+
 
 function Header(props){
+   
     return(
         <div>
+            
             <div id='logo-photo'>
-             <img src={Logo} alt="Logo"></img>
+             <a href="/" ><img src={Logo} alt="Logo"></img></a>
              </div>
             <div id='header-buttons'> 
             
@@ -26,8 +30,8 @@ function Header(props){
             <Link to={'/workhistory'}>
                 <button id='button'>Work History</button>
             </Link>
-            <Link to={'/contact'}>
-                <button id='button'>Contact Me</button>
+            <Link  to={'/contact'}> 
+                <button id='button' >Contact Me</button>
             </Link>
             </div>
         </div>
@@ -35,3 +39,28 @@ function Header(props){
 }
 
 export default Header
+
+// <Contact handleChange={this.handleChange} modalOpen={this.state.modalOpen} closeModal={this.closeModal}/>
+
+// onClick={this.openModal} openModal={this.openModal}
+
+// let handleChange;
+// let openModal;
+// let closeModal;
+
+// handleChange = (event) => {
+//     this.setState({
+//       modalOpen: event.target.value
+//     })
+//   }
+//   openModal=()=> {
+//     this.setState({
+//       modalOpen: true
+//     });
+//   }
+
+//   closeModal= ()=> {
+//       this.setState({
+//       modalOpen: false
+//     });
+//   }
