@@ -11,7 +11,7 @@ function Portfolio(props) {
         <div className='portfolio'>
             <div id='title'> 
                 <h1>My Recent Work</h1>
-                <h2>Here are a few projects I have worked on recently. <br />Contact me for more projects.</h2> 
+                <h2>Here are a few projects I have worked on recently.</h2> 
             </div>
             <div id='geovermont'>
                 <h3> Geo-Vermonter </h3>

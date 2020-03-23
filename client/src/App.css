@@ -17,11 +17,14 @@
 #about-title{
     grid-area: about-title;
     font-size: 28px;
+    font-family: Raleway, sans-serif;
 }
 
 #about-title h1{
-    color: #2978a0;
-    font-weight: 700;
+    color: #c6e0ff;
+    font-weight: 800;
+    font-family: Raleway, sans-serif;
+    margin-top: 20px;
 }
 
 #about-text{
@@ -29,6 +32,7 @@
     margin-top: 0px;
     margin-right: 22px;
     text-overflow: inherit;
+    font-family: Libre Baskerville, sans-serif;
     margin-bottom: 200px;
 }
 
@@ -37,18 +41,20 @@ hr{
 }
 
 #about-text h3{
-    font-size: 20px;
-    color:#bcab79
+    font-size: 22px;
+    color:#bcab79;
+    font-family: Libre Baskerville, sans-serif;
 }
 
 #about-text p{
-    font-size: 18px;
+    font-size: 20px;
     color: #c6e0ff
 }
 #about-photo{
     grid-area: about-photo;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 200px;
+    margin-left: 20px;
 }
 
 
@@ -89,6 +95,7 @@ hr{
   .text {
     color: #c6e0ff;
     font-size: 65px;
+    font-family: Raleway, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -109,7 +116,7 @@ hr{
 #button {
     background-color: #315659; 
     border: none;
-    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     color: #c6e0ff;
     padding: 10px 25px;
@@ -154,27 +161,30 @@ hr{
 }
 
 .portfolio h1{
-    font-size: 45px;
+    font-size: 50px;
     color: #c6e0ff;
     font-weight: 700;
 }
 
 .portfolio h2{
-    font-size: 14px;
-    color: #bcab79;
+    margin-top: -10px;
+    font-size: 18px;
+    color: #c6e0ff;
 }
 .portfolio h3{
-    font-size: 20px;
+    font-size: 28px;
     color: #bcab79;
+    font-family: Libre Baskerville, sans-serif;
 }
 
 .portfolio h4{
-    font-size: 12px;
-    color: #bcab79;
+    font-size: 16px;
+    color: #c6e0ff;
 }
 
 #title{
     grid-area: title;
+    font-family: Raleway, sans-serif;
     justify-content: center;
     text-align: center;
     margin-top: 50px;
@@ -296,11 +306,11 @@ a{
 }
 #interest-title{
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-family: Raleway, sans-serif;
+    font-weight: 950;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     font-size: 2rem;  
     margin: 0;    
     transform: translate(-50%, -50%);
@@ -314,6 +324,7 @@ a{
 #top-info h2{
     text-align: left;
     font-size: 32px;
+    font-family: Libre Baskerville, sans-serif;
     font-weight: 500;
     color: #c6e0ff;
     margin-top: 40px;
@@ -323,6 +334,7 @@ a{
 #interest-text2 {
     word-wrap: normal;
     color: #c6e0ff;
+    font-family: Libre Baskerville, sans-serif;
     font-size: 25px;
     text-align: left;
     width: 800px;
@@ -396,7 +408,8 @@ a{
   
   .Contact .text {
     color: #c6e0ff;
-    font-size: 65px;
+    font-size: 60px;
+    font-family: Raleway, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -411,6 +424,7 @@ a{
   .Contact #name{
     color: #bcab79;
     background-color: #2978a0;
+    font-family: Libre Baskerville, sans-serif;
     font-weight: 600;
     font-size: 30px;
   }
