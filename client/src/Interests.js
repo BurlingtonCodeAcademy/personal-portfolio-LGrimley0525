@@ -4,7 +4,7 @@ import Burlingtonphoto from './hobbyphotos/Burlington.png'
 import Billsphoto from './hobbyphotos/BillsStadium.png'
 import Burpeephoto from './hobbyphotos/Burpee.png'
 import Familyphoto from './hobbyphotos/Family.png'
-import Wingphoto from './hobbyphotos/Wings.png'
+
 
 
 function Interests(props) {
