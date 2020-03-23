@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from './Logo2.png'
+import Logo from './websitephotos/Logo2.png'
 import './App.css'
 
 
@@ -13,12 +13,11 @@ function Header(props) {
                 <a href="/" ><img src={Logo} alt="Logo"></img></a>
             </div>
             <div id='header-buttons'>
-
                 <Link to={'/'}>
                     <button id='button'>Home</button>
                 </Link>
                 <Link to={'/about'}>
-                    <button id='button'>About Me</button>
+                    <button id='button'>About</button>
                 </Link>
                 <Link to={'/portfolio'}>
                     <button id='button'>Portfolio</button>
@@ -30,7 +29,7 @@ function Header(props) {
                     <button id='button'>Work History</button>
                 </Link>
                 <Link to={'/contact'}>
-                    <button id='button'>Contact Me</button>
+                    <button id='button'>Contact</button>
                 </Link>
             </div>
         </div>

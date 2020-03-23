@@ -67,12 +67,14 @@ hr{
     width: 100%;
 }
 .home-overlay{
-    background-image: url(HomeOverlay.png);
+    background-image: url('./websitephotos/HomeOverlay.png');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.6;
+    margin-right: -50px;
+    box-shadow: 0 50vw 0 50vw #315659;
 }
 
 .overlay{ 
@@ -295,6 +297,18 @@ a{
   
 /* Interests CSS-------------------------------------------------- */
   
+.interests{
+    margin-bottom: 25px;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% 25% 22.5% 22.5% 20%;
+    grid-template-areas: 
+    ". interest-title interest-title ."
+    ". burlington-pic burlington-pic ."
+    ". tobey-pic top-info ."
+    ". family-pic interest-text2 ."
+    ". burpee-pic bills-pic .";
+    grid-gap: 2em;
+}
 
 #burlington-pic img{
     margin-top: 30px;
@@ -302,9 +316,12 @@ a{
     height: 100vh;
     position: cover;
     opacity: 0.3;
-
+}
+#burlington-pic{
+    grid-area: burlington-pic;
 }
 #interest-title{
+    grid-area: interest-title;
     color: white;
     font-family: Raleway, sans-serif;
     font-weight: 950;
@@ -316,11 +333,6 @@ a{
     transform: translate(-50%, -50%);
 }
 
-.interest-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 #top-info h2{
     text-align: left;
     font-size: 32px;
@@ -328,51 +340,61 @@ a{
     font-weight: 500;
     color: #c6e0ff;
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 75px;
 }
 
 #interest-text2 {
+    grid-area: interest-text2;
+    overflow: auto;
     word-wrap: normal;
     color: #c6e0ff;
     font-family: Libre Baskerville, sans-serif;
     font-size: 25px;
     text-align: left;
-    width: 800px;
-    height: 400px;
-    margin-top:-300px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    height: 500px;
+    width: 650px;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+#tobey-pic{
+    grid-area: tobey-pic;    
 }
 #tobey-pic img{
+    float: right;
     border-radius: 50%;
     height: 450px;
-    width: 500px;
-    margin-top: 80px;
-    margin-left: 25px;
+    width: 450px;
+    margin-right: 50px;
 }
+
 #bills-pic img{
-    height: 400px;
+    grid-area: bills-pic;
     border-radius: 50%;
-    margin-bottom: 25px;
-    width: 600px;
-    margin-top: -400px;
+    width: 500px;
+    margin-right: 150px;
+    margin-left: -50px;
+    float: right;
 }
+
+#family-pic img{
+    grid-area: family-pic;
+    border-radius: 30%;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: -25px;
+}
+
 #burpee-pic img{
+    grid-area: burpee-pic;
     border-radius: 50%;
     height: 450px;
     width: 400px;
-    margin-top: 60px; 
-    margin-left: 25px;  
-}
-#family-pic img{
-    margin-top: -400px;
-    border-radius: 30%;
-    margin-right: 500px;
-    margin-left: -50px;
-    margin-bottom: 50px;
-}
+    float: right;
+    margin-top: -20px;
+    margin-right: 50px;
 
-
+}
 /* Contact CSS -----------------------------------------  */
 
 .Contact {
@@ -381,7 +403,7 @@ a{
     width: 100%;
 }
 .contact-overlay{
-    background-image: url(ContactOverlay.png);
+    background-image: url('./websitephotos/ContactOverlay.png');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;

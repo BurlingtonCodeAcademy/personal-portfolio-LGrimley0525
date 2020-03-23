@@ -4,7 +4,7 @@ import React from 'react'
 function WorkHistory (props){
     return(
         <div>
-            <h1>Here is my Work History</h1>
+            <h1>Stay Tuned For Page Update...</h1>
         </div>
     )
 }
