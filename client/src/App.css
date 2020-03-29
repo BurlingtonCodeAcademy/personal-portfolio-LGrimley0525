@@ -16,7 +16,7 @@
 
 #about-title{
     grid-area: about-title;
-    font-size: 28px;
+    font-size: 32px;
     font-family: Raleway, sans-serif;
 }
 
@@ -158,79 +158,281 @@ hr{
     ". title title title ."
     ". geovermont . yelp ."
     ". remock . tictactoe ."
-    ". . zork . ."   
-                   
+    ". zork zork zork ."     ;
+     margin-bottom: 200px;            
 }
-
 .portfolio h1{
-    font-size: 50px;
+    font-size: 60px;
     color: #c6e0ff;
     font-weight: 700;
+    font-family: Raleway, sans-serif;
 }
-
 .portfolio h2{
-    margin-top: -10px;
+    margin-top: -20px;
     font-size: 18px;
     color: #c6e0ff;
+    letter-spacing: 2px;
 }
 .portfolio h3{
-    font-size: 28px;
+    font-size: 30px;
     color: #bcab79;
-    font-family: Libre Baskerville, sans-serif;
+    font-family: Raleway, sans-serif;
 }
-
-.portfolio h4{
-    font-size: 16px;
-    color: #c6e0ff;
-}
-
 #title{
     grid-area: title;
     font-family: Raleway, sans-serif;
     justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-    
+    text-align: left;
+    margin-top: 15px;
 }
+/* //Geovermont CSS -------------------------- */
 #geovermont{
     grid-area: geovermont;
     text-align: center;
+    cursor:pointer;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    max-width: 100%;
+    max-height: 100%;
+    width: 650px;
+    height: 450px;
+    position: relative;
+    background-size: cover; 
+    background-position: center;
 }
+#fadedbox{    
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #c6e0ff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    padding: 130px 20px;
+    width: 595px;
+    height: 350px;    
+}
+
+#geovermont:hover #fadedbox { opacity: 0.9;}
+
+#geovermont #text{
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px); 
+    font-size: 24px;
+    font-family: Libre Baskerville, sans-serif;
+    text-transform: uppercase; 
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+#geovermont:hover #text, #geovermont:focus #text{
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    background-color: #253031
+}
+
+/*Yelp CSS-------------------- */
 #yelp{
     grid-area: yelp;
     text-align: center;
-    
+    cursor:pointer;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    max-width: 100%;
+    max-height: 100%;
+    width: 650px;
+    height: 450px;
+    position: relative;
+    background-size: cover; 
+    background-position: center;
 }
+#yelp:hover #fadedbox { opacity: 0.9;}
+
+#yelp #text{
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px); 
+    font-size: 24px;
+    font-family: Libre Baskerville, sans-serif;
+    text-transform: uppercase; 
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+#yelp:hover #text, #yelp:focus #text{
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    background-color: #253031
+}
+/*Remock CSS----------------- */
 #remock{
     grid-area: remock;
-    text-align: center;  
+    text-align: center;
+    cursor:pointer;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    max-width: 100%;
+    max-height: 100%;
+    width: 650px;
+    height: 450px;
+    position: relative;
+    background-size: cover; 
+    background-position: center; 
 }
+
+#remock:hover #fadedbox { opacity: 0.9;}
+
+#remock #text{
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px); 
+    font-size: 24px;
+    font-family: Libre Baskerville, sans-serif;
+    text-transform: uppercase; 
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+#remock:hover #text, #remock:focus #text{
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    background-color: #253031
+}
+/*Tic Tac Toe CSS-------------- */
 #tictactoe{
     grid-area: tictactoe;
     text-align: center;
+    cursor:pointer;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    max-width: 100%;
+    max-height: 100%;
+    width: 650px;
+    height: 450px;
+    position: relative;
+    background-size: cover; 
+    background-position: center;
 }
+
+#tictactoe:hover #fadedbox { opacity: 0.9;}
+
+#tictactoe #text{
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px); 
+    font-size: 24px;
+    font-family: Libre Baskerville, sans-serif;
+    text-transform: uppercase; 
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+#tictactoe:hover #text, #tictactoe:focus #text{
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    background-color: #253031
+}
+
+/* Zork CSS--------------------------------- */
+
 #zork{
     grid-area: zork;
     text-align: center;
+    cursor:pointer;
     padding: 0;
-    place-self: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    /* place-self: center; */
     margin-bottom: 200px;
+    position: relative;
+}
+#zorkfadedbox{    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    color: #c6e0ff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    padding: 150px 450px 50px 450px;
+    width: 700px;
+    height: 400px;
+} 
+
+#zork-text{
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px); 
+    font-size: 24px;
+    font-family: Libre Baskerville, sans-serif;
+    text-transform: uppercase; 
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+#zork:hover #zorkfadedbox { opacity: 0.9;}
+#zork:hover #zork-text, #zork:focus #zork-text{
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    background-color:#253031 ;
 }
 .portfolio img{
     text-align: center;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 10px;
-    padding: 5px;
-    width: 500px;
-    height: 350px;
+    object-fit: fill;
+    max-width: 100%;
+    padding: 0px;
+    width: 650px;
+    height: 450px;
 }
-
 .portfolio #zork img{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+.portfolio a{
+    color:  #c6e0ff;
+    text-decoration: underline;
+}
 /* Footer CSS------------------------------------------------------- */
 
 .footer{
@@ -242,7 +444,7 @@ hr{
     flex-shrink: 0;
     margin-top: auto;
     padding: 20px;
-    width: 100%;
+    box-sizing: border-box;
     box-shadow: 0 50vh 0 50vh #253031;
 }
 
@@ -258,6 +460,7 @@ hr{
   
 a{
     text-decoration: none;  
+   
 }
   
 
@@ -296,103 +499,103 @@ a{
   
   
 /* Interests CSS-------------------------------------------------- */
-  
-.interests{
-    margin-bottom: 25px;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: 10% 25% 22.5% 22.5% 20%;
-    grid-template-areas: 
-    ". interest-title interest-title ."
-    ". burlington-pic burlington-pic ."
-    ". tobey-pic top-info ."
-    ". family-pic interest-text2 ."
-    ". burpee-pic bills-pic .";
-    grid-gap: 2em;
+.foo {
+    width: 200px;
+    background-color: transparent;
 }
-
-#burlington-pic img{
-    margin-top: 30px;
-    width: 100vw;
-    height: 100vh;
-    position: cover;
-    opacity: 0.3;
+.foo .contain {
+    display: inline-block;
+    background-color: transparent;
+    position: relative;
+    padding: 2px 4px;
+    transition: all 200ms cubic-bezier(0.2, 1, 0.2, 1);
 }
-#burlington-pic{
-    grid-area: burlington-pic;
+.foo .contain:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 100%;
+    bottom: 2px;
+    left: 0;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 500ms 250ms;
 }
-#interest-title{
-    grid-area: interest-title;
-    color: white;
+.foo.foo-out .contain:after {
+    right: 0;
+    transition: all cubic-bezier(0.5, -0.5, 0.25, 1.5) 500ms;
+}
+.text-width-wrapper {
+    display: inline-block;
+    background-color: transparent;
     font-family: Raleway, sans-serif;
-    font-weight: 950;
+
+}
+@keyframes show {
+    from {
+        opacity: 0;
+   }
+    to {
+        opacity: 1;
+   }
+}
+.hidden-text {
+    position: absolute;
+    top: -999px;
+    left: -999px;
+    text-align: center;
+}
+  
+#interest-text{
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 15px;
     position: absolute;
     top: 50%;
-    left: 30%;
-    font-size: 1.5rem;  
-    margin: 0;    
+    left: 50%;
+    font-size: 60px;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
+    background-color: transparent;
+} 
+
+#burl-pic img{
+    width: 100vw;
+    margin-top: 50px;
 }
 
-#top-info h2{
-    text-align: left;
-    font-size: 32px;
-    font-family: Libre Baskerville, sans-serif;
-    font-weight: 500;
-    color: #c6e0ff;
-    margin-top: 40px;
-    margin-left: 75px;
-}
-
-#interest-text2 {
-    grid-area: interest-text2;
-    overflow: auto;
-    word-wrap: normal;
-    color: #c6e0ff;
-    font-family: Libre Baskerville, sans-serif;
-    font-size: 25px;
-    text-align: left;
-    height: 500px;
-    width: 650px;
-    margin-left: 200px;
-    margin-top: 200px;
+.picturesection{
+    display: flex;
+    flex-direction: column;
 }
 
 #tobey-pic{
-    grid-area: tobey-pic;    
-}
-#tobey-pic img{
-    float: right;
-    border-radius: 50%;
-    height: 450px;
-    width: 450px;
-    margin-right: 50px;
-}
-
-#bills-pic img{
-    grid-area: bills-pic;
-    border-radius: 50%;
+    align-self: flex-start;
+    margin-top: 50px;
+    margin-left: 15px;
+    height: 500px;
     width: 500px;
-    margin-right: 150px;
-    margin-left: -50px;
-    float: right;
 }
 
-#family-pic img{
-    grid-area: family-pic;
-    border-radius: 30%;
-    margin-left: 100px;
-    margin-bottom: 50px;
-    margin-top: -25px;
+#bills-pic{
+    align-self: flex-end;
+    margin-top: 65px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    height: 500px;
+}
+#burpee-pic{
+    align-self: flex-end;
+    margin-left: 15px;
+    height: 500px;
+    width: 500px;
 }
 
-#burpee-pic img{
-    grid-area: burpee-pic;
-    border-radius: 50%;
-    height: 450px;
-    width: 400px;
-    float: right;
-    margin-top: -20px;
-    margin-right: 50px;
+#family-pic{
+    align-self: flex-start;
+    margin-left: 15px;
+    height: 500px;
+    width: 700px;
 
 }
 /* Contact CSS -----------------------------------------  */
@@ -441,7 +644,6 @@ a{
     text-align: center;
     background-color: #2978a0;
   }
-
 
   .Contact #name{
     color: #bcab79;
