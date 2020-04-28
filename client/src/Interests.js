@@ -90,7 +90,7 @@ function Interests(props) {
             </div>
             <h1 className="hidden-text" ref={nextTextRef} />
 
-            <div className='carousel'>
+            {/* <div className='carousel'>
                 <Arrow
                     direction="left"
                     clickFunction={this.previousSlide}
@@ -102,7 +102,7 @@ function Interests(props) {
                     direction="right"
                     clickFunction={this.nextSlide}
                     glyph="&#9654;" />
-            </div>
+            </div> */}
         </div>
     )
 }
