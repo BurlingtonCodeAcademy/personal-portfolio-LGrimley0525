@@ -36,6 +36,8 @@ function Interests(props) {
         'Compassionate.',
         'Mexican Food.',
         'Motivator.',
+        'Kool & the Gang.',
+        "Baking."
     ]
     const [current, setCurrent] = useState(0)
     const [currentWidth, setCurrentWidth] = useState(0)
@@ -88,32 +90,70 @@ function Interests(props) {
             </div>
             <h1 className="hidden-text" ref={nextTextRef} />
 
-            <div className='picturesection'>
-                <div id='tobey-pic'>
-                    <img src={Tobeyphoto} alt='tobey'></img>
-                </div>
-                <div id='bills-pic'>
-                    <img src={Billsphoto} alt='bills'></img>
-                </div>
-                <div id='family-pic'>
-                    <img src={Familyphoto} alt='family'></img>
-                </div>
-                <div id='burpee-pic'>
-                    <img src={Burpeephoto} alt='burpee'></img>
-                </div>
-                <div id='wings'>
-                    <img src={Wings} alt='wings'></img>
-                </div>
-                <div id='quebec-pic'>
-                    <img src={Quebec} alt='quebec'></img>
-                </div>
-               
+            <div className='carousel'>
+                <Arrow
+                    direction="left"
+                    clickFunction={this.previousSlide}
+                    glyph="&#9664;" />
 
+                <ImageSlide url={imgUrl} />
+
+                <Arrow
+                    direction="right"
+                    clickFunction={this.nextSlide}
+                    glyph="&#9654;" />
             </div>
-        </div>    
+        </div>
     )
 }
 
 
+const ImageSlide = ({ url }) => {
+    const styles = {
+        backgroundImage: `url(${url})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+    };
+
+    return (
+        <div className="image-slide" style={styles}></div>
+    );
+}
+
+const Arrow = ({ direction, clickFunction, glyph }) => (
+    <div
+        className={`slide-arrow ${direction}`}
+        onClick={clickFunction}>
+        {glyph}
+    </div>
+);
+
 
 export default Interests
+
+
+
+
+
+
+
+
+
+// <div id='tobey-pic'>
+//                     <img src={Tobeyphoto} alt='tobey'></img>
+//                 </div>
+//                 <div id='bills-pic'>
+//                     <img src={Billsphoto} alt='bills'></img>
+//                 </div>
+//                 <div id='family-pic'>
+//                     <img src={Familyphoto} alt='family'></img>
+//                 </div>
+//                 <div id='burpee-pic'>
+//                     <img src={Burpeephoto} alt='burpee'></img>
+//                 </div>
+//                 <div id='wings'>
+//                     <img src={Wings} alt='wings'></img>
+//                 </div>
+//                 <div id='quebec-pic'>
+//                     <img src={Quebec} alt='quebec'></img>
+//                 </div>
