@@ -10,7 +10,7 @@ function Footer(props) {
                     <li id="email"><a href="mailto:laurenhammer1115@gmail.com" >
                         <i class="fa fa-3x fa-google-plus"></i></a>
                     </li>
-                    <li id="linkedin"><a href="https://www.linkedin.com/in/lauren-hammer-grimley-8a450548/">
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/lauren-hammer-grimley/">
                         <i class="fa fa-3x fa-linkedin-square"></i></a>
                     </li>
                     <li id="github"><a href="https://github.com/LGrimley0525">

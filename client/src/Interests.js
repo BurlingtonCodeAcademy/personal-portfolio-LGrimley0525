@@ -16,7 +16,6 @@ const { useState, useLayoutEffect, useRef } = React
 
 
 
-
 function Interests(props) {
     const words = [
         'Burlingtonian.',
@@ -39,6 +38,18 @@ function Interests(props) {
         'Kool & the Gang.',
         "Baking."
     ]
+    
+const images =[ 
+    <img src={Tobeyphoto} alt='tobey'></img>,
+    <img src={Billsphoto} alt='bills'></img>,
+    <img src={Burpeephoto} alt='burpee'></img>,
+    <img src={Familyphoto} alt='family'></img>,
+    <img src={Wings} alt='wings'></img>,
+    <img src={Quebec} alt='quebec'></img>,
+    <img src={InterestHeaderPic} alt='interest'></img>,
+    <img src={Christmas} alt='christmas'></img>
+   
+];
     const [current, setCurrent] = useState(0)
     const [currentWidth, setCurrentWidth] = useState(0)
     const [currentTextStyle, setCurrentTextStyle] = useState({})
@@ -66,7 +77,7 @@ function Interests(props) {
                     opacity: 1
                 })
             }, 500)
-        }, 2000);
+        }, 3000);
         return (() => {
             clearInterval(interval)
         })
@@ -90,70 +101,21 @@ function Interests(props) {
             </div>
             <h1 className="hidden-text" ref={nextTextRef} />
 
-            {/* <div className='carousel'>
-                <Arrow
-                    direction="left"
-                    clickFunction={this.previousSlide}
-                    glyph="&#9664;" />
-
-                <ImageSlide url={imgUrl} />
-
-                <Arrow
-                    direction="right"
-                    clickFunction={this.nextSlide}
-                    glyph="&#9654;" />
-            </div> */}
-        </div>
-    )
-}
-
-
-const ImageSlide = ({ url }) => {
-    const styles = {
-        backgroundImage: `url(${url})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-    };
-
-    return (
-        <div className="image-slide" style={styles}></div>
-    );
-}
-
-const Arrow = ({ direction, clickFunction, glyph }) => (
-    <div
-        className={`slide-arrow ${direction}`}
-        onClick={clickFunction}>
-        {glyph}
-    </div>
+            <div id='interest-pics'>
+                <br /> A Glimpse Into My Interests... <br />
+                
+              
+                <AnimateOnChange className="foo2" durationOut={1500}>
+                    <div className="contain2" style={{ width: currentWidth ? currentWidth + 'px' : 'auto' }}>
+                        <div className="text-width-wrapper2" style={currentTextStyle} ref={currentTextRef}>{images[current]}</div>
+                    </div>
+                </AnimateOnChange> 
+            </div>
+        </div>    
 );
 
+}
 
 export default Interests
 
 
-
-
-
-
-
-
-
-// <div id='tobey-pic'>
-//                     <img src={Tobeyphoto} alt='tobey'></img>
-//                 </div>
-//                 <div id='bills-pic'>
-//                     <img src={Billsphoto} alt='bills'></img>
-//                 </div>
-//                 <div id='family-pic'>
-//                     <img src={Familyphoto} alt='family'></img>
-//                 </div>
-//                 <div id='burpee-pic'>
-//                     <img src={Burpeephoto} alt='burpee'></img>
-//                 </div>
-//                 <div id='wings'>
-//                     <img src={Wings} alt='wings'></img>
-//                 </div>
-//                 <div id='quebec-pic'>
-//                     <img src={Quebec} alt='quebec'></img>
-//                 </div>
