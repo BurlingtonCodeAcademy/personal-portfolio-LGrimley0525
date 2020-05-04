@@ -525,7 +525,7 @@ a{
 .text-width-wrapper {
     display: inline-block;
     background-color: transparent;
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
 
 }
 @keyframes show {
@@ -558,12 +558,14 @@ a{
     background-color: transparent;
 } 
 
+
 .foo2 {
-    width: 200px;
+    width: 500px;
     background-color: transparent;
 }
 .foo2 .contain2 {
     display: inline-block;
+    text-align: center;
     background-color: transparent;
     position: relative;
     padding: 2px 4px;
@@ -576,16 +578,17 @@ a{
     right: 100%;
     bottom: 2px;
     left: 0;
-    transition: all cubic-bezier(0.2, 1, 0.2, 1) 500ms 250ms;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 1500ms 1250ms;
 }
 .foo2.foo2-out .contain2:after {
     right: 0;
-    transition: all cubic-bezier(0.5, -0.5, 0.25, 1.5) 500ms;
+    transition: all cubic-bezier(0.5, -0.5, 0.25, 1.5) 1500ms;
 }
 .text-width-wrapper2 {
-    display: inline-block;
+    display: block;
     background-color: transparent;
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
 
 }
 @keyframes show {
@@ -599,50 +602,18 @@ a{
 
 #interest-pics{
     font-family: "Raleway", sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 25px;
 } 
-
-
-
 
 #burl-pic img{
     width: 100vw;
     margin-top: 50px;
 }
 
-.picturesection{
-    display: flex;
-    flex-direction: column;
-}
 
-#tobey-pic{
-    align-self: flex-start;
-    margin-top: 50px;
-    margin-left: 15px;
-    height: 500px;
-    width: 500px;
-}
 
-#bills-pic{
-    align-self: flex-end;
-    margin-top: 65px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    height: 500px;
-}
-#burpee-pic{
-    align-self: flex-end;
-    margin-left: 15px;
-    height: 500px;
-    width: 500px;
-}
-
-#family-pic{
-    align-self: flex-start;
-    margin-left: 15px;
-    height: 500px;
-    width: 700px;
-
-}
 /* Contact CSS -----------------------------------------  */
 
 .Contact {

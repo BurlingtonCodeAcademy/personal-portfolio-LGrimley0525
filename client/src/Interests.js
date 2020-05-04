@@ -102,7 +102,8 @@ const images =[
             <h1 className="hidden-text" ref={nextTextRef} />
 
             <div id='interest-pics'>
-                <br /> A Glimpse Into My Interests... <br />
+                <br />
+                <h3> A Sneak Peek Into My Favorites...</h3> <br /> <br />
                 
               
                 <AnimateOnChange className="foo2" durationOut={1500}>
